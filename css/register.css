@@ -5,8 +5,73 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    background-color: #fffff5;
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    background-color: #FF86B4; /* bg nav */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;  /* จัดเรียงปุ่มไปทางขวา */
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    padding-left: 50px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; /* ทำให้ container เต็มความสูงของหน้าจอ */
+    background-color: #fffff5; 
+}
+
+.logo-login {
+    width: 300px;
+    height: auto; 
+    margin-bottom: 20px;
+}
+
+.login {
+    margin-left: 10px;
+}
+
+button {
+    font-size: 25px;
+    padding: 9px 25px;
+    background-color: #FFFCAC;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #C4F8FF;
+}
+
+
+/*--------------------------------------------------------------
+#ลงทะเบียน
+--------------------------------------------------------------*/
+
 
 .container {
     display: flex;
@@ -14,7 +79,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #fffff5;
 }
 
 .header {
@@ -22,18 +87,26 @@ body {
 }
 
 .form-login {
+    font-size: 25px;
     background: white;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
+    width: 350px;
+    height: auto;
+    border: 3px solid #000000; 
+   
+}
+
+#username,
+#password,
+#confirm-password,
+#email {
+    font-size: 20px;
 }
 
 .input-group {
     margin-bottom: 15px;
+    
 }
 
 .input-group input {
@@ -43,19 +116,22 @@ body {
     border-radius: 4px;
 }
 
-.btn-google {
-    color: white;
+button.btn-google {
+    background-color: #ffffff; /* bg nav */
+    color: rgb(0, 0, 0);
     margin-bottom: 15px;
     padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
     width: 100%;
+    font-size: 20px;
 }
 
-.btn-submit {
-    background: #4CAF50;
-    color: white;
+button.btn-submit {
+    background-color: #FF86B4; /* bg nav */
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -68,18 +144,17 @@ body {
     margin-top: 20px;
     background: white;
     padding: 15px;
-    border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
+    width: 350px;
+    border: 3px solid black;
+    font-size: 20px;
 }
 
 .text-login a {
-    color: #0066cc;
+    padding-left: 10px;
+    color:#FF86B4;;
     text-decoration: none;
-    
+    font-size: 25px;
 }
 
 .text-login a:hover {
@@ -90,10 +165,17 @@ body {
     display: flex;
     align-items: center;
     margin: 10px 0;
+
+}
+
+text {
+    padding: 0px 5px 0px 5px;
+    /* top right bottom left */
 }
 
 .line {
     height: 1px;
     flex-grow: 1;
     background: #000;
+
 }

@@ -84,7 +84,7 @@ button {
 }
 
 /* Log in Button */
-button {
+.login button {
     padding: 9px 25px;
     background-color: #FFFCAC;
     border: none;
@@ -92,7 +92,7 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.login button:hover {
     background-color: #C4F8FF;
 }
 
@@ -100,7 +100,7 @@ button:hover {
     padding-right: 50px;
 }
 
-.container {
+.container-addmamu {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
